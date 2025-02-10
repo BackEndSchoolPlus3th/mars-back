@@ -14,10 +14,15 @@ spring:
   lifecycle:
     # 스프링부트가 종료 요청을 받은 후 기다려줄 수 있는 최대한의 시간
     timeout-per-shutdown-phase: 1h
+#  datasource:
+#    url: jdbc:mysql://172.17.0.1:3306/deploy_test
+#    username: root
+#    password: 1234
+#    driver-class-name: com.mysql.cj.jdbc.Driver
   datasource:
-    url: jdbc:mysql://172.17.0.1:3306/deploy_test
+    url: jdbc:mysql://likelion-mars-mysql.cvi8qmy2a7zg.ap-northeast-2.rds.amazonaws.com/likelion_mars
     username: root
-    password: 1234
+    password: likelion123
     driver-class-name: com.mysql.cj.jdbc.Driver
   data:
     redis:
