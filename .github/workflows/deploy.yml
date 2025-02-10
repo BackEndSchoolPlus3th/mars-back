@@ -76,7 +76,7 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          instance-ids: "i-0c0d29d65ef07c03c"
+          instance-ids: ${{ secrets.EC2_INSTANCE_ID }}  # EC2 인스턴스 ID를 시크릿으로 관리
           working-directory: /
           comment: Deploy
           command: |
