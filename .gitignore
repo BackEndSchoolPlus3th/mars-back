@@ -41,4 +41,6 @@ application-secret.yml
 /logstash/pipeline/logstash.conf
 db_dev.*
 .idea
-.terraform
+.terraform*
+terraform.tfstate
+terraform.tfstate.backup
