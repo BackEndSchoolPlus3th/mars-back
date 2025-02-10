@@ -66,6 +66,9 @@ dependencies {
 
     //implementation("org.springdoc:springdoc-openapi-ui:1.8.0")
 
+    implementation ("org.springframework.boot:spring-boot-starter-actuator")
+    implementation ("org.springframework.boot:spring-boot-starter-data-redis")
+    implementation ("org.springframework.session:spring-session-data-redis")
 }
 
 tasks.withType<Test> {
