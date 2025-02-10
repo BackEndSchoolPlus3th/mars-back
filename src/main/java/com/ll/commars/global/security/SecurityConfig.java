@@ -55,7 +55,7 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("http://localhost:5173","http://localhost:5174", "http://localhost:5175", "https://accounts.google.com", "https://nid.naver.com")); // React 프론트엔드 URL 허용
+        configuration.setAllowedOrigins(List.of("http://localhost:5173","http://localhost:5174", "http://localhost:5175", "https://accounts.google.com", "https://nid.naver.com", "https://commars.whqtker.site")); // React 프론트엔드 URL 허용
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("*"));
         configuration.setExposedHeaders(List.of("Authorization", "Content-Type", "refreshToken", "accessToken"));
@@ -72,7 +72,7 @@ public class SecurityConfig {
             @Override
             public void addCorsMappings(org.springframework.web.servlet.config.annotation.CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:5173", "http://localhost:5174", "http://localhost:5175", "https://accounts.google.com", "https://nid.naver.com")
+                        .allowedOrigins("http://localhost:5173","http://localhost:5174", "http://localhost:5175", "https://accounts.google.com", "https://nid.naver.com", "https://commars.whqtker.site")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
